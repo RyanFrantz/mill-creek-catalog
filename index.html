@@ -28,11 +28,7 @@
     main,
     footer,
     section,
-    details,
-    table,
-    thead,
-    tbody,
-    tr {
+    details {
       max-inline-size: none;
     }
 
@@ -77,18 +73,20 @@
       margin-block-end: 0.75rem;
     }
 
-    .table-wrap {
+    .catalog {
+      display: grid;
+      grid-template-columns: max-content max-content max-content;
+      column-gap: 1.5rem;
       overflow-x: auto;
     }
 
-    table {
-      inline-size: 100%;
-      border-collapse: collapse;
+    .catalog-header,
+    .catalog-row {
+      display: contents;
     }
 
-    th {
-      text-align: start;
-      padding: 0.5rem 1rem;
+    .catalog-header > div {
+      padding-block: 0.5rem;
       background: var(--color-th-bg);
       font-size: 0.8rem;
       font-weight: 600;
@@ -99,18 +97,13 @@
       white-space: nowrap;
     }
 
-    td {
-      padding: 0.45rem 1rem;
+    .catalog-row > div {
+      padding-block: 0.45rem;
       border-block-end: 1px solid var(--color-border);
-      vertical-align: baseline;
     }
 
-    tbody tr:last-child td {
+    .catalog-row:last-child > div {
       border-block-end: none;
-    }
-
-    tbody tr:hover {
-      background: rgba(61, 94, 58, 0.04);
     }
 
     summary {
@@ -166,323 +159,281 @@
   <section aria-labelledby="heading-amphibians-reptiles">
     <details>
       <summary><h2 id="heading-amphibians-reptiles">Amphibians and Reptiles (8)</h2></summary>
-      <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Common Name</th>
-            <th scope="col">Species</th>
-            <th scope="col">Observation Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>American Five-lined Skink</td><td><i class="species">Plestiodon fasciatus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Green Tree Frog</td><td><i class="species">Dryophytes cinereus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Toad</td><td><i class="species">Anaxyrus americanus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Atlantic Coast Leopard Frog</td><td><i class="species">Lithobates kauffeldi</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Box Turtle</td><td><i class="species">Terrapene carolina</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Painted Turtle</td><td><i class="species">Chrysemys picta</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Gray Tree Frog</td><td><i class="species">Dryophytes versicolor</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Spring Peepers</td><td><i class="species">Pseudacris crucifer</i></td><td class="observation">Audible by author</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="catalog">
+        <div class="catalog-header">
+          <div>Common Name</div>
+          <div>Species</div>
+          <div>Observation Type</div>
+        </div>
+          <div class="catalog-row"><div>American Five-lined Skink</div><div><i class="species">Plestiodon fasciatus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Green Tree Frog</div><div><i class="species">Dryophytes cinereus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Toad</div><div><i class="species">Anaxyrus americanus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Atlantic Coast Leopard Frog</div><div><i class="species">Lithobates kauffeldi</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Box Turtle</div><div><i class="species">Terrapene carolina</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Painted Turtle</div><div><i class="species">Chrysemys picta</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Gray Tree Frog</div><div><i class="species">Dryophytes versicolor</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Spring Peepers</div><div><i class="species">Pseudacris crucifer</i></div><div class="observation">Audible by author</div></div>
+      </div>
     </details>
   </section>
 
   <section aria-labelledby="heading-birds">
     <details>
       <summary><h2 id="heading-birds">Birds (50)</h2></summary>
-      <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Common Name</th>
-            <th scope="col">Species</th>
-            <th scope="col">Observation Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>American Crow</td><td><i class="species">Corvus brachyrhynchos</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Goldfinch</td><td><i class="species">Spinus tristis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Robin</td><td><i class="species">Turdus migratorius</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Turkey</td><td><i class="species">Meleagris gallopavo</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Bald Eagle</td><td><i class="species">Haliaeetus leucocephalus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Barred Owl</td><td><i class="species">Strix varia</i></td><td class="observation">Audible by author</td></tr>
-          <tr><td>Belted Kingfisher</td><td><i class="species">Megaceryle alcyon</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Black Vulture</td><td><i class="species">Coragyps atratus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Blue Jay</td><td><i class="species">Cyanocitta cristata</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Brown Creeper</td><td><i class="species">Certhia americana</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Brown-headed Cowbird</td><td><i class="species">Molothrus ater</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Canada Goose</td><td><i class="species">Branta canadensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Carolina Chickadee</td><td><i class="species">Poecile carolinensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Carolina Wren</td><td><i class="species">Thryothorus ludovicianus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Cedar Waxwing</td><td><i class="species">Bombycilla cedrorum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Common Grackle</td><td><i class="species">Quiscalus quiscula</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Dark-eyed Junco</td><td><i class="species">Junco hyemalis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Downy Woodpecker</td><td><i class="species">Dryobates pubescens</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Bluebird</td><td><i class="species">Sialia sialis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Phoebe</td><td><i class="species">Sayornis phoebe</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Towhee</td><td><i class="species">Pipilo erythrophthalmus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Wood Pewee</td><td><i class="species">Contopus virens</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Great Blue Heron</td><td><i class="species">Ardea herodias</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Great Crested Flycatcher</td><td><i class="species">Myiarchus crinitus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Great Egret</td><td><i class="species">Ardea alba</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Hairy Woodpecker</td><td><i class="species">Dryobates villosus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Hooded Merganser</td><td><i class="species">Lophodytes cucullatus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>House Finch</td><td><i class="species">Haemorhous mexicanus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>House Sparrow</td><td><i class="species">Passer domesticus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Mallard</td><td><i class="species">Anas platyrhynchos</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Mourning Dove</td><td><i class="species">Zenaida macroura</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Northern Cardinal</td><td><i class="species">Cardinalis cardinalis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Northern Flicker</td><td><i class="species">Colaptes auratus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Northern Mockingbird</td><td><i class="species">Mimus polyglottos</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Osprey</td><td><i class="species">Pandion haliaetus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Pileated Woodpecker</td><td><i class="species">Dryocopus pileatus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Red-bellied Woodpecker</td><td><i class="species">Melanerpes carolinus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Red-shouldered Hawk</td><td><i class="species">Buteo lineatus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Red-winged Blackbird</td><td><i class="species">Agelaius phoeniceus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Ruby-throated Hummingbird</td><td><i class="species">Archilochus colubris</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Rusty Blackbird</td><td><i class="species">Euphagus carolinus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Scarlet Tanager</td><td><i class="species">Piranga olivacea</i></td><td class="observation">Audible by author</td></tr>
-          <tr><td>Song Sparrow</td><td><i class="species">Melospiza melodia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Tufted Titmouse</td><td><i class="species">Baeolophus bicolor</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Turkey Vulture</td><td><i class="species">Cathartes aura</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>White-breasted Nuthatch</td><td><i class="species">Sitta carolinensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>White-throated Sparrow</td><td><i class="species">Zonotrichia albicollis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Wood Duck</td><td><i class="species">Aix sponsa</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Wood Thrush</td><td><i class="species">Hylocichla mustelina</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Yellow-bellied Sapsucker</td><td><i class="species">Sphyrapicus varius</i></td><td class="observation">Visual by author</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="catalog">
+        <div class="catalog-header">
+          <div>Common Name</div>
+          <div>Species</div>
+          <div>Observation Type</div>
+        </div>
+          <div class="catalog-row"><div>American Crow</div><div><i class="species">Corvus brachyrhynchos</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Goldfinch</div><div><i class="species">Spinus tristis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Robin</div><div><i class="species">Turdus migratorius</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Turkey</div><div><i class="species">Meleagris gallopavo</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Bald Eagle</div><div><i class="species">Haliaeetus leucocephalus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Barred Owl</div><div><i class="species">Strix varia</i></div><div class="observation">Audible by author</div></div>
+          <div class="catalog-row"><div>Belted Kingfisher</div><div><i class="species">Megaceryle alcyon</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Black Vulture</div><div><i class="species">Coragyps atratus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Blue Jay</div><div><i class="species">Cyanocitta cristata</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Brown Creeper</div><div><i class="species">Certhia americana</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Brown-headed Cowbird</div><div><i class="species">Molothrus ater</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Canada Goose</div><div><i class="species">Branta canadensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Carolina Chickadee</div><div><i class="species">Poecile carolinensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Carolina Wren</div><div><i class="species">Thryothorus ludovicianus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Cedar Waxwing</div><div><i class="species">Bombycilla cedrorum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Common Grackle</div><div><i class="species">Quiscalus quiscula</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Dark-eyed Junco</div><div><i class="species">Junco hyemalis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Downy Woodpecker</div><div><i class="species">Dryobates pubescens</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Bluebird</div><div><i class="species">Sialia sialis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Phoebe</div><div><i class="species">Sayornis phoebe</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Towhee</div><div><i class="species">Pipilo erythrophthalmus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Wood Pewee</div><div><i class="species">Contopus virens</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Great Blue Heron</div><div><i class="species">Ardea herodias</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Great Crested Flycatcher</div><div><i class="species">Myiarchus crinitus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Great Egret</div><div><i class="species">Ardea alba</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Hairy Woodpecker</div><div><i class="species">Dryobates villosus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Hooded Merganser</div><div><i class="species">Lophodytes cucullatus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>House Finch</div><div><i class="species">Haemorhous mexicanus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>House Sparrow</div><div><i class="species">Passer domesticus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Mallard</div><div><i class="species">Anas platyrhynchos</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Mourning Dove</div><div><i class="species">Zenaida macroura</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Northern Cardinal</div><div><i class="species">Cardinalis cardinalis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Northern Flicker</div><div><i class="species">Colaptes auratus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Northern Mockingbird</div><div><i class="species">Mimus polyglottos</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Osprey</div><div><i class="species">Pandion haliaetus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Pileated Woodpecker</div><div><i class="species">Dryocopus pileatus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Red-bellied Woodpecker</div><div><i class="species">Melanerpes carolinus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Red-shouldered Hawk</div><div><i class="species">Buteo lineatus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Red-winged Blackbird</div><div><i class="species">Agelaius phoeniceus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Ruby-throated Hummingbird</div><div><i class="species">Archilochus colubris</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Rusty Blackbird</div><div><i class="species">Euphagus carolinus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Scarlet Tanager</div><div><i class="species">Piranga olivacea</i></div><div class="observation">Audible by author</div></div>
+          <div class="catalog-row"><div>Song Sparrow</div><div><i class="species">Melospiza melodia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Tufted Titmouse</div><div><i class="species">Baeolophus bicolor</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Turkey Vulture</div><div><i class="species">Cathartes aura</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>White-breasted Nuthatch</div><div><i class="species">Sitta carolinensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>White-throated Sparrow</div><div><i class="species">Zonotrichia albicollis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Wood Duck</div><div><i class="species">Aix sponsa</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Wood Thrush</div><div><i class="species">Hylocichla mustelina</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Yellow-bellied Sapsucker</div><div><i class="species">Sphyrapicus varius</i></div><div class="observation">Visual by author</div></div>
+      </div>
     </details>
   </section>
 
   <section aria-labelledby="heading-insects-arachnids">
     <details>
       <summary><h2 id="heading-insects-arachnids">Insects and Arachnids (20)</h2></summary>
-      <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Common Name</th>
-            <th scope="col">Species</th>
-            <th scope="col">Observation Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Assassin Bug</td><td><i class="species">Arilus cristatus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Bess Beetle</td><td><i class="species">Odontotaenius disjunctus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Black Widow Spider</td><td><i class="species">Latrodectus mactans</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Carpenter Bee</td><td><i class="species">Xylocopa virginica</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Carolina Mantis</td><td><i class="species">Stagmomantis carolina</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Cicada</td><td></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Cicada Killer</td><td><i class="species">Sphecius speciosus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Damselfly</td><td></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Dragonfly</td><td></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Tiger Swallowtail</td><td><i class="species">Papilio glaucus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Giant Leopard Moth</td><td><i class="species">Hypercompe scribonia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Longhorn Beetle</td><td>N/A</td><td class="observation">Visual by author</td></tr>
-          <tr><td>Luna Moth</td><td><i class="species">Actias luna</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Marbled Orbweaver</td><td><i class="species">Araneus marmoreus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Painted Lady</td><td><i class="species">Vanessa cardui</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Spicebush Swallowtail</td><td><i class="species">Papilio troilus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Spined Micrathena</td><td><i class="species">Micrathena gracilis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Wolf Spider</td><td>Lycosidae</td><td class="observation">Visual by author</td></tr>
-          <tr><td>Yellowjacket</td><td><i class="species">Vespula sp.</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Zebra Swallowtail</td><td><i class="species">Eurytides marcellus</i></td><td class="observation">Visual by author</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="catalog">
+        <div class="catalog-header">
+          <div>Common Name</div>
+          <div>Species</div>
+          <div>Observation Type</div>
+        </div>
+          <div class="catalog-row"><div>Assassin Bug</div><div><i class="species">Arilus cristatus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Bess Beetle</div><div><i class="species">Odontotaenius disjunctus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Black Widow Spider</div><div><i class="species">Latrodectus mactans</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Carpenter Bee</div><div><i class="species">Xylocopa virginica</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Carolina Mantis</div><div><i class="species">Stagmomantis carolina</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Cicada</div><div></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Cicada Killer</div><div><i class="species">Sphecius speciosus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Damselfly</div><div></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Dragonfly</div><div></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Tiger Swallowtail</div><div><i class="species">Papilio glaucus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Giant Leopard Moth</div><div><i class="species">Hypercompe scribonia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Longhorn Beetle</div><div>N/A</div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Luna Moth</div><div><i class="species">Actias luna</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Marbled Orbweaver</div><div><i class="species">Araneus marmoreus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Painted Lady</div><div><i class="species">Vanessa cardui</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Spicebush Swallowtail</div><div><i class="species">Papilio troilus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Spined Micrathena</div><div><i class="species">Micrathena gracilis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Wolf Spider</div><div>Lycosidae</div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Yellowjacket</div><div><i class="species">Vespula sp.</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Zebra Swallowtail</div><div><i class="species">Eurytides marcellus</i></div><div class="observation">Visual by author</div></div>
+      </div>
     </details>
   </section>
 
   <section aria-labelledby="heading-mammals-fish">
     <details>
       <summary><h2 id="heading-mammals-fish">Mammals and Fish (11)</h2></summary>
-      <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Common Name</th>
-            <th scope="col">Species</th>
-            <th scope="col">Observation Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Beaver</td><td><i class="species">Castor canadensis</i></td><td class="observation">Beaver sign observed by author (felled trees, dens)</td></tr>
-          <tr><td>Bluegill</td><td><i class="species">Lepomis macrochirus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Crappie</td><td><i class="species">Pomoxis</i> sp.</td><td class="observation">Second-hand report</td></tr>
-          <tr><td>Eastern Coyote</td><td><i class="species">Canis latrans</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Gray Squirrel</td><td><i class="species">Sciurus carolinensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Large-mouth Bass</td><td><i class="species">Micropterus salmoides</i></td><td class="observation">Second-hand report</td></tr>
-          <tr><td>Muskrat</td><td><i class="species">Ondatra zibethicus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Raccoon</td><td><i class="species">Procyon lotor</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Red Fox</td><td><i class="species">Vulpes vulpes</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>White-tailed Deer</td><td><i class="species">Odocoileus virginianus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Woodland Jumping Mouse</td><td><i class="species">Napaeozapus insignis</i></td><td class="observation">Visual by author</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="catalog">
+        <div class="catalog-header">
+          <div>Common Name</div>
+          <div>Species</div>
+          <div>Observation Type</div>
+        </div>
+          <div class="catalog-row"><div>Beaver</div><div><i class="species">Castor canadensis</i></div><div class="observation">Beaver sign observed by author (felled trees, dens)</div></div>
+          <div class="catalog-row"><div>Bluegill</div><div><i class="species">Lepomis macrochirus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Crappie</div><div><i class="species">Pomoxis</i> sp.</div><div class="observation">Second-hand report</div></div>
+          <div class="catalog-row"><div>Eastern Coyote</div><div><i class="species">Canis latrans</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Gray Squirrel</div><div><i class="species">Sciurus carolinensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Large-mouth Bass</div><div><i class="species">Micropterus salmoides</i></div><div class="observation">Second-hand report</div></div>
+          <div class="catalog-row"><div>Muskrat</div><div><i class="species">Ondatra zibethicus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Raccoon</div><div><i class="species">Procyon lotor</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Red Fox</div><div><i class="species">Vulpes vulpes</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>White-tailed Deer</div><div><i class="species">Odocoileus virginianus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Woodland Jumping Mouse</div><div><i class="species">Napaeozapus insignis</i></div><div class="observation">Visual by author</div></div>
+      </div>
     </details>
   </section>
 
   <section aria-labelledby="heading-mosses">
     <details>
       <summary><h2 id="heading-mosses">Mosses (2)</h2></summary>
-      <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Common Name</th>
-            <th scope="col">Species</th>
-            <th scope="col">Observation Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Broom Forkmoss</td><td><i class="species">Dicranum scoparium</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Red-stemmed Feather Moss</td><td><i class="species">Pleurozium schreberi</i></td><td class="observation">Visual by author</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="catalog">
+        <div class="catalog-header">
+          <div>Common Name</div>
+          <div>Species</div>
+          <div>Observation Type</div>
+        </div>
+          <div class="catalog-row"><div>Broom Forkmoss</div><div><i class="species">Dicranum scoparium</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Red-stemmed Feather Moss</div><div><i class="species">Pleurozium schreberi</i></div><div class="observation">Visual by author</div></div>
+      </div>
     </details>
   </section>
 
   <section aria-labelledby="heading-mushrooms">
     <details>
       <summary><h2 id="heading-mushrooms">Mushrooms (2)</h2></summary>
-      <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Common Name</th>
-            <th scope="col">Species</th>
-            <th scope="col">Observation Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Honey Mushroom</td><td><i class="species">Armillaria mellea</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Turkey Tail Mushroom</td><td><i class="species">Trametes versicolor</i></td><td class="observation">Visual by author</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="catalog">
+        <div class="catalog-header">
+          <div>Common Name</div>
+          <div>Species</div>
+          <div>Observation Type</div>
+        </div>
+          <div class="catalog-row"><div>Honey Mushroom</div><div><i class="species">Armillaria mellea</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Turkey Tail Mushroom</div><div><i class="species">Trametes versicolor</i></div><div class="observation">Visual by author</div></div>
+      </div>
     </details>
   </section>
 
   <section aria-labelledby="heading-plants">
     <details>
       <summary><h2 id="heading-plants">Plants (97)</h2></summary>
-      <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Common Name</th>
-            <th scope="col">Species</th>
-            <th scope="col">Observation Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Allegheny Blackberry</td><td><i class="species">Rubus allegheniensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Beech</td><td><i class="species">Fagus grandifolia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Chestnut</td><td><i class="species">Castanea dentata</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Groundnut</td><td><i class="species">Apios americana</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Hazelnut</td><td><i class="species">Corylus americana</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Hog-peanut</td><td><i class="species">Amphicarpaea bracteata</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>American Holly</td><td><i class="species">Ilex opaca</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Arrowwood Viburnum</td><td><i class="species">Viburnum dentatum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Black Cherry</td><td><i class="species">Prunus serotina</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Black Cohosh</td><td><i class="species">Actaea racemosa</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Black Huckleberry</td><td><i class="species">Gaylussacia baccata</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Black Locust</td><td><i class="species">Robinia pseudoacacia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Black Oak</td><td><i class="species">Quercus velutina</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Black Tupelo</td><td><i class="species">Nyssa sylvatica</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Black Walnut</td><td><i class="species">Juglans nigra</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Blackhaw Viburnum</td><td><i class="species">Viburnum prunifolium</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Bloodroot</td><td><i class="species">Sanguinaria canadensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Bluestem Goldenrod</td><td><i class="species">Solidago caesia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Boneset</td><td><i class="species">Eupatorium perfoliatum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Canadian Black Snakeroot</td><td><i class="species">Sanicula canadensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Chestnut Oak</td><td><i class="species">Quercus montana</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Christmas Fern</td><td><i class="species">Polystichum acrostichoides</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Cinnamon Fern</td><td><i class="species">Osmundastrum cinnamomeum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Climbing Hempvine</td><td><i class="species">Mikania scandens</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Common Blue Violet</td><td><i class="species">Viola sororia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Common Elderberry</td><td><i class="species">Sambucus nigra</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Common Hackberry</td><td><i class="species">Celtis occidentalis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Coralberry</td><td><i class="species">Symphoricarpos orbiculatus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Dangleberry</td><td><i class="species">Gaylussacia frondosa</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Deerberry</td><td><i class="species">Vaccinium stamineum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Deertongue Grass</td><td><i class="species">Dichanthelium clandestinum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Devil's Beggarticks</td><td><i class="species">Bidens frondosa</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Devil's Walking Stick</td><td><i class="species">Aralia spinosa</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Downy Serviceberry</td><td><i class="species">Amelanchier arborea</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Bottlebrush Grass</td><td><i class="species">Elymus hystrix</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Enchanter's Nightshade</td><td><i class="species">Circaea canadensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Hemlock</td><td><i class="species">Tsuga canadensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern Redbud</td><td><i class="species">Cercis canadensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Eastern White Pine</td><td><i class="species">Pinus strobus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>False Solomon's Seal</td><td><i class="species">Maianthemum racemosum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>False Strawberry</td><td><i class="species">Potentilla indica</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Fragrant Bedstraw</td><td><i class="species">Gallium triflorum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Frost Grape</td><td><i class="species">Vitis vulpina</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Ghost Plant (Ghost Pipe)</td><td><i class="species">Monotropa uniflora</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Greenbriar</td><td><i class="species">Smilax</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Ground Cherry</td><td><i class="species">Physalis</i> sp.</td><td class="observation">Visual by author</td></tr>
-          <tr><td>Highbush Blueberry</td><td><i class="species">Vaccinium corymbosum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Hop Hornbeam</td><td><i class="species">Ostrya virginiana</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Indian Hemp</td><td><i class="species">Apocynum cannabinum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Jack-in-the-pulpit</td><td><i class="species">Arisaema triphyllum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Jewelweed (Touch-me-not)</td><td><i class="species">Impatiens capensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Jumpseed</td><td><i class="species">Persicaria virginiana</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Lady Fern</td><td><i class="species">Athyrium filix-femina</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Maple Leaf Viburnum</td><td><i class="species">Viburnum acerifolium</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Marginal Wood Fern</td><td><i class="species">Dryopteris marginalis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Mayapple</td><td><i class="species">Podophyllum peltatum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Mountain Laurel</td><td><i class="species">Kalmia latifolia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Muscadine Grape</td><td><i class="species">Vitis rotundifolia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Netted Chain Fern</td><td><i class="species">Woodwardia areolata</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>New York Fern</td><td><i class="species">Parathelypteris noveboracensis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Northern Dewberry</td><td><i class="species">Rubus flagellaris</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Northern Red Oak</td><td><i class="species">Quercus rubra</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Partridgeberry</td><td><i class="species">Mitchella repens</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Pennsylvania Sedge</td><td><i class="species">Carex pennsylvanica</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Pignut Hickory</td><td><i class="species">Carya glabra</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Pink Azalea (Pinxter Flower)</td><td><i class="species">Rhododendron periclymenoides</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Poison Ivy</td><td><i class="species">Toxicodendron radicans</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Poison Sumac</td><td><i class="species">Toxicodendron vernix</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Pussytoes</td><td><i class="species">Antennaria plantaginifolia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Red Maple</td><td><i class="species">Acer rubrum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Red Mulberry</td><td><i class="species">Morus rubra</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Riverbank Grape</td><td><i class="species">Vitis riparia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Shield Fern</td><td><i class="species">Dryopteris</i> sp.</td><td class="observation">Visual by author</td></tr>
-          <tr><td>Shortleaf Pine</td><td><i class="species">Pinus echinata</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Skunk Cabbage</td><td><i class="species">Symplocarpus foetidus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Smooth Witherod</td><td><i class="species">Viburnum nudum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Southern Red Oak</td><td><i class="species">Quercus falcata</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Spicebush</td><td><i class="species">Lindera benzoin</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Spotted Wintergreen</td><td><i class="species">Chimaphila maculata</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Strawberry Bush</td><td><i class="species">Euonymus americanus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Summer Grape</td><td><i class="species">Vitis aestivalis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Swamp Doghobble</td><td><i class="species">Eubotrys racemosa</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Swamp White Oak</td><td><i class="species">Quercus bicolor</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Sweetgum</td><td><i class="species">Liquidambar styraciflua</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Sycamore</td><td><i class="species">Platanus occidentalis</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Trumpet Creeper</td><td><i class="species">Campsis radicans</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Tulip Tree</td><td><i class="species">Liriodendron tulipifera</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Virginia Creeper</td><td><i class="species">Parthenocissus quinquefolia</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Virginia Marsh St. John's Wort</td><td><i class="species">Triadenum virginicum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>White Avens</td><td><i class="species">Geum canadense</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>White Oak</td><td><i class="species">Quercus alba</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>White Rattlesnakeroot</td><td><i class="species">Nabalus albus</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>White-panicled Aster</td><td><i class="species">Symphyotrichum lanceolatum</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Winged Elm</td><td><i class="species">Ulmus alata</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Winterberry Holly</td><td><i class="species">Ilex verticillata</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Witchhazel</td><td><i class="species">Hamamelis virginiana</i></td><td class="observation">Visual by author</td></tr>
-          <tr><td>Yellow Crownbeard</td><td><i class="species">Verbisina occidentalis</i></td><td class="observation">Visual by author</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="catalog">
+        <div class="catalog-header">
+          <div>Common Name</div>
+          <div>Species</div>
+          <div>Observation Type</div>
+        </div>
+          <div class="catalog-row"><div>Allegheny Blackberry</div><div><i class="species">Rubus allegheniensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Beech</div><div><i class="species">Fagus grandifolia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Chestnut</div><div><i class="species">Castanea dentata</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Groundnut</div><div><i class="species">Apios americana</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Hazelnut</div><div><i class="species">Corylus americana</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Hog-peanut</div><div><i class="species">Amphicarpaea bracteata</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>American Holly</div><div><i class="species">Ilex opaca</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Arrowwood Viburnum</div><div><i class="species">Viburnum dentatum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Black Cherry</div><div><i class="species">Prunus serotina</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Black Cohosh</div><div><i class="species">Actaea racemosa</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Black Huckleberry</div><div><i class="species">Gaylussacia baccata</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Black Locust</div><div><i class="species">Robinia pseudoacacia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Black Oak</div><div><i class="species">Quercus velutina</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Black Tupelo</div><div><i class="species">Nyssa sylvatica</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Black Walnut</div><div><i class="species">Juglans nigra</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Blackhaw Viburnum</div><div><i class="species">Viburnum prunifolium</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Bloodroot</div><div><i class="species">Sanguinaria canadensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Bluestem Goldenrod</div><div><i class="species">Solidago caesia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Boneset</div><div><i class="species">Eupatorium perfoliatum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Canadian Black Snakeroot</div><div><i class="species">Sanicula canadensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Chestnut Oak</div><div><i class="species">Quercus montana</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Christmas Fern</div><div><i class="species">Polystichum acrostichoides</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Cinnamon Fern</div><div><i class="species">Osmundastrum cinnamomeum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Climbing Hempvine</div><div><i class="species">Mikania scandens</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Common Blue Violet</div><div><i class="species">Viola sororia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Common Elderberry</div><div><i class="species">Sambucus nigra</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Common Hackberry</div><div><i class="species">Celtis occidentalis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Coralberry</div><div><i class="species">Symphoricarpos orbiculatus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Dangleberry</div><div><i class="species">Gaylussacia frondosa</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Deerberry</div><div><i class="species">Vaccinium stamineum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Deertongue Grass</div><div><i class="species">Dichanthelium clandestinum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Devil's Beggarticks</div><div><i class="species">Bidens frondosa</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Devil's Walking Stick</div><div><i class="species">Aralia spinosa</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Downy Serviceberry</div><div><i class="species">Amelanchier arborea</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Bottlebrush Grass</div><div><i class="species">Elymus hystrix</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Enchanter's Nightshade</div><div><i class="species">Circaea canadensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Hemlock</div><div><i class="species">Tsuga canadensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern Redbud</div><div><i class="species">Cercis canadensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Eastern White Pine</div><div><i class="species">Pinus strobus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>False Solomon's Seal</div><div><i class="species">Maianthemum racemosum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>False Strawberry</div><div><i class="species">Potentilla indica</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Fragrant Bedstraw</div><div><i class="species">Gallium triflorum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Frost Grape</div><div><i class="species">Vitis vulpina</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Ghost Plant (Ghost Pipe)</div><div><i class="species">Monotropa uniflora</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Greenbriar</div><div><i class="species">Smilax</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Ground Cherry</div><div><i class="species">Physalis</i> sp.</div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Highbush Blueberry</div><div><i class="species">Vaccinium corymbosum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Hop Hornbeam</div><div><i class="species">Ostrya virginiana</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Indian Hemp</div><div><i class="species">Apocynum cannabinum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Jack-in-the-pulpit</div><div><i class="species">Arisaema triphyllum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Jewelweed (Touch-me-not)</div><div><i class="species">Impatiens capensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Jumpseed</div><div><i class="species">Persicaria virginiana</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Lady Fern</div><div><i class="species">Athyrium filix-femina</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Maple Leaf Viburnum</div><div><i class="species">Viburnum acerifolium</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Marginal Wood Fern</div><div><i class="species">Dryopteris marginalis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Mayapple</div><div><i class="species">Podophyllum peltatum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Mountain Laurel</div><div><i class="species">Kalmia latifolia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Muscadine Grape</div><div><i class="species">Vitis rotundifolia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Netted Chain Fern</div><div><i class="species">Woodwardia areolata</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>New York Fern</div><div><i class="species">Parathelypteris noveboracensis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Northern Dewberry</div><div><i class="species">Rubus flagellaris</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Northern Red Oak</div><div><i class="species">Quercus rubra</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Partridgeberry</div><div><i class="species">Mitchella repens</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Pennsylvania Sedge</div><div><i class="species">Carex pennsylvanica</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Pignut Hickory</div><div><i class="species">Carya glabra</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Pink Azalea (Pinxter Flower)</div><div><i class="species">Rhododendron periclymenoides</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Poison Ivy</div><div><i class="species">Toxicodendron radicans</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Poison Sumac</div><div><i class="species">Toxicodendron vernix</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Pussytoes</div><div><i class="species">Antennaria plantaginifolia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Red Maple</div><div><i class="species">Acer rubrum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Red Mulberry</div><div><i class="species">Morus rubra</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Riverbank Grape</div><div><i class="species">Vitis riparia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Shield Fern</div><div><i class="species">Dryopteris</i> sp.</div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Shortleaf Pine</div><div><i class="species">Pinus echinata</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Skunk Cabbage</div><div><i class="species">Symplocarpus foetidus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Smooth Witherod</div><div><i class="species">Viburnum nudum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Southern Red Oak</div><div><i class="species">Quercus falcata</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Spicebush</div><div><i class="species">Lindera benzoin</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Spotted Wintergreen</div><div><i class="species">Chimaphila maculata</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Strawberry Bush</div><div><i class="species">Euonymus americanus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Summer Grape</div><div><i class="species">Vitis aestivalis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Swamp Doghobble</div><div><i class="species">Eubotrys racemosa</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Swamp White Oak</div><div><i class="species">Quercus bicolor</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Sweetgum</div><div><i class="species">Liquidambar styraciflua</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Sycamore</div><div><i class="species">Platanus occidentalis</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Trumpet Creeper</div><div><i class="species">Campsis radicans</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Tulip Tree</div><div><i class="species">Liriodendron tulipifera</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Virginia Creeper</div><div><i class="species">Parthenocissus quinquefolia</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Virginia Marsh St. John's Wort</div><div><i class="species">Triadenum virginicum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>White Avens</div><div><i class="species">Geum canadense</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>White Oak</div><div><i class="species">Quercus alba</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>White Rattlesnakeroot</div><div><i class="species">Nabalus albus</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>White-panicled Aster</div><div><i class="species">Symphyotrichum lanceolatum</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Winged Elm</div><div><i class="species">Ulmus alata</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Winterberry Holly</div><div><i class="species">Ilex verticillata</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Witchhazel</div><div><i class="species">Hamamelis virginiana</i></div><div class="observation">Visual by author</div></div>
+          <div class="catalog-row"><div>Yellow Crownbeard</div><div><i class="species">Verbisina occidentalis</i></div><div class="observation">Visual by author</div></div>
+      </div>
     </details>
   </section>
 
