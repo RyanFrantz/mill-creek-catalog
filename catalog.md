@@ -139,6 +139,7 @@
 |Jumpseed|Persicaria virginiana|Visual by author|
 |Coralberry|Symphoricarpos orbiculatus|Visual by author|
 |Shortleaf Pine|Pinus echinata|Visual by author|
+|Skunk Cabbage|Symplocarpus foetidus|Visual by author|
 |White Rattlesnakeroot|Nabalus albus|Visual by author|
 |Canadian Black Snakeroot|Sanicula canadensis|Visual by author|
 |Yellow Crownbeard|Verbisina occidentalis|Visual by author|
