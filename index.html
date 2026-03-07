@@ -28,6 +28,7 @@
     main,
     footer,
     section,
+    details,
     table,
     thead,
     tbody,
@@ -112,6 +113,30 @@
       background: rgba(61, 94, 58, 0.04);
     }
 
+    summary {
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary h2::after {
+      content: ' ▸';
+      font-size: 0.75em;
+      vertical-align: middle;
+      opacity: 0.6;
+    }
+
+    details[open] summary h2::after {
+      content: ' ▾';
+    }
+
+    details > .table-wrap {
+      margin-block-start: 0.75rem;
+    }
+
     .species {
       font-style: italic;
       color: var(--color-muted);
@@ -134,8 +159,9 @@
 <main>
 
   <section aria-labelledby="heading-amphibians-reptiles">
-    <h2 id="heading-amphibians-reptiles">Amphibians and Reptiles</h2>
-    <div class="table-wrap">
+    <details>
+      <summary><h2 id="heading-amphibians-reptiles">Amphibians and Reptiles (6)</h2></summary>
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -154,11 +180,13 @@
         </tbody>
       </table>
     </div>
+    </details>
   </section>
 
   <section aria-labelledby="heading-birds">
-    <h2 id="heading-birds">Birds</h2>
-    <div class="table-wrap">
+    <details>
+      <summary><h2 id="heading-birds">Birds (49)</h2></summary>
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -220,11 +248,13 @@
         </tbody>
       </table>
     </div>
+    </details>
   </section>
 
   <section aria-labelledby="heading-insects-arachnids">
-    <h2 id="heading-insects-arachnids">Insects and Arachnids</h2>
-    <div class="table-wrap">
+    <details>
+      <summary><h2 id="heading-insects-arachnids">Insects and Arachnids (11)</h2></summary>
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -248,11 +278,13 @@
         </tbody>
       </table>
     </div>
+    </details>
   </section>
 
   <section aria-labelledby="heading-mammals-fish">
-    <h2 id="heading-mammals-fish">Mammals and Fish</h2>
-    <div class="table-wrap">
+    <details>
+      <summary><h2 id="heading-mammals-fish">Mammals and Fish (10)</h2></summary>
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -275,11 +307,13 @@
         </tbody>
       </table>
     </div>
+    </details>
   </section>
 
   <section aria-labelledby="heading-mushrooms">
-    <h2 id="heading-mushrooms">Mushrooms</h2>
-    <div class="table-wrap">
+    <details>
+      <summary><h2 id="heading-mushrooms">Mushrooms (2)</h2></summary>
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -294,11 +328,13 @@
         </tbody>
       </table>
     </div>
+    </details>
   </section>
 
   <section aria-labelledby="heading-plants">
-    <h2 id="heading-plants">Plants</h2>
-    <div class="table-wrap">
+    <details>
+      <summary><h2 id="heading-plants">Plants (93)</h2></summary>
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -404,6 +440,7 @@
         </tbody>
       </table>
     </div>
+    </details>
   </section>
 
 </main>
