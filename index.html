@@ -122,10 +122,15 @@
       display: none;
     }
 
+    summary h2 {
+      display: flex;
+      align-items: center;
+    }
+
     summary h2::after {
-      content: ' ▸';
-      font-size: 0.75em;
-      vertical-align: middle;
+      content: '▸';
+      font-size: 2em;
+      margin-inline-start: 0.25em;
       opacity: 0.6;
     }
 
