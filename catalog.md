@@ -72,7 +72,7 @@
 |Black Huckleberry|Gaylussacia baccata|Visual by author|
 |Chestnut Oak|Quercus montana|Visual by author|
 |Spicebush|Lindera benzoin|Visual by author|
-|Eartern Redbud|Cercis canadensis|Visual by author|
+|Eastern Redbud|Cercis canadensis|Visual by author|
 |Winterberry Holly|Ilex verticillata|Visual by author|
 |Black Locust|Robinia pseudoacacia|Visual by author|
 |Pink Azalea (Pinxter flower)|Rhododendron periclymenoides|Visual by author|
@@ -80,7 +80,7 @@
 |Virginia Creeper|Parthenocissus quinquefolia|Visual by author|
 |Red Fox|Vulpes vulpes|Visual by author|
 |White-tailed Deer|Odocoileus virginianus|Visual by author|
-|Beaver|Castor canadensis|Visual by author|
+|Beaver|Castor canadensis|Beaver sign observed by author (felled trees, dens)|
 |Muskrat|Ondatra zibethicus|Visual by author|
 |Eastern Coyote|Canis latrans|Visual by author|
 |Large-mouth Bass|Micropterus salmoides|Second-hand report|
@@ -158,7 +158,7 @@
 |Downy Serviceberry|Amelanchier arborea|Visual by author|
 |Spotted Wintergreen|Chimaphila maculata|Visual by author|
 |Smooth Witherod|Viburnum nudum|Visual by author|
-|Virgina Marsh St. John's Wort|Triadenum virginicum|Visual by author|
+|Virginia Marsh St. John's Wort|Triadenum virginicum|Visual by author|
 |Poison Sumac|Toxicodendron vernix|Visual by author|
 |Poison Ivy|Toxicodendron radicans|Visual by author|
 |Netted Chain Fern|Woodwardia areolata|Visual by author|
@@ -171,3 +171,22 @@
 |American Five-lined Skink|Plestiodon fasciatus|Visual by author|
 |Marbled Orbweaver|Araneus marmoreus|Visual by author|
 |Painted Lady|Vanessa cardui|Visual by author|
+|Muscadine Grape|Vitis rotundifolia|Visual by author|
+|Riverbank Grape|Vitis riparia|Visual by author|
+|Frost Grape|Vitis vulpina|Visual by author|
+|Summer Grape|Vitis aestivalis|Visual by author|
+|Eastern Painted Turtle|Chrysemys picta|Visual by author|
+|Eastern Box Turtle|Terrapene carolina|Visual by author|
+|Raccoon|Procyon lotor|Visual by author|
+|Yellowjacket|Vespula sp.|Visual by author|
+|Carpenter Bee|Xylocopa virginica|Visual by author|
+|Cicada||Visual by author|
+|Cicada Killer|Sphecius speciosus|Visual by author|
+|Assassin Bug|Arilus cristatus|Visual by author|
+|Dragonfly||Visual by author|
+|Damselfly||Visual by author|
+|Rusty Blackbird|Euphagus carolinus|Visual by author|
+|Broom Forkmoss|Dicranum scoparium|Visual by author|
+|Red-stemmed Feather Moss|Pleurozium schreberi|Visual by author|
+|Bess Beetle|Odontotaenius disjunctus|Visual by author|
+|Spined Micrathena|Micrathena gracilis|Visual by author|
