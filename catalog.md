@@ -1,6 +1,6 @@
 |Common Name|Species|Observation Type|
 |---|---|---|
-|American Chestnut|Castanea dentata|Visual by author|
+|American Chestnut|Castanea dentata|Visual by author. A specimen was confirmed by The American Chestnut Foundation.|
 |American Beech|Fagus grandifolia|Visual by author|
 |White Oak|Quercus alba|Visual by author|
 |Northern Red Oak|Quercus rubra|Visual by author|
