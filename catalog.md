@@ -190,3 +190,4 @@
 |Red-stemmed Feather Moss|Pleurozium schreberi|Visual by author|
 |Bess Beetle|Odontotaenius disjunctus|Visual by author|
 |Spined Micrathena|Micrathena gracilis|Visual by author|
+|Sassafras|Sassafras albidum|Visual by author|
