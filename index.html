@@ -496,6 +496,10 @@
 <script>
   const searchInput = document.querySelector('#search');
   const searchClear = document.querySelector('#search-clear');
+  const searchLabel = document.querySelector('label[for="search"]');
+
+  const totalCount = document.querySelectorAll('.catalog-row').length;
+  searchLabel.textContent = `Search ${totalCount} species`;
 
   searchClear.addEventListener('click', () => {
     searchInput.value = '';
