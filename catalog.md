@@ -191,3 +191,4 @@
 |Bess Beetle|Odontotaenius disjunctus|Visual by author|
 |Spined Micrathena|Micrathena gracilis|Visual by author|
 |Sassafras|Sassafras albidum|Visual by author|
+|Black Rat Snake|Pantherophis alleghaniensis|Visual by author|
