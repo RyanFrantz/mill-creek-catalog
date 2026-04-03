@@ -193,3 +193,4 @@
 |Sassafras|Sassafras albidum|Visual by author|
 |Black Rat Snake|Pantherophis alleghaniensis|Visual by author|
 |Common Eastern Firefly|Photinus pyralis|Visual by author|
+|Northern short-tailed shrew|Blarina brevicauda|Visual by author|
