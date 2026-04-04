@@ -223,7 +223,7 @@
 
   <section aria-labelledby="heading-amphibians-reptiles">
     <details>
-      <summary><h2 id="heading-amphibians-reptiles">Amphibians and Reptiles (8)</h2></summary>
+      <summary><h2 id="heading-amphibians-reptiles">Amphibians and Reptiles</h2></summary>
       <div class="catalog">
         <div class="catalog-header">
           <div>Common Name</div>
@@ -246,7 +246,7 @@
 
   <section aria-labelledby="heading-birds">
     <details>
-      <summary><h2 id="heading-birds">Birds (50)</h2></summary>
+      <summary><h2 id="heading-birds">Birds</h2></summary>
       <div class="catalog">
         <div class="catalog-header">
           <div>Common Name</div>
@@ -309,7 +309,7 @@
 
   <section aria-labelledby="heading-insects-arachnids">
     <details>
-      <summary><h2 id="heading-insects-arachnids">Insects and Arachnids (20)</h2></summary>
+      <summary><h2 id="heading-insects-arachnids">Insects and Arachnids</h2></summary>
       <div class="catalog">
         <div class="catalog-header">
           <div>Common Name</div>
@@ -343,7 +343,7 @@
 
   <section aria-labelledby="heading-mammals-fish">
     <details>
-      <summary><h2 id="heading-mammals-fish">Mammals and Fish (11)</h2></summary>
+      <summary><h2 id="heading-mammals-fish">Mammals and Fish</h2></summary>
       <div class="catalog">
         <div class="catalog-header">
           <div>Common Name</div>
@@ -368,7 +368,7 @@
 
   <section aria-labelledby="heading-mushrooms">
     <details>
-      <summary><h2 id="heading-mushrooms">Mushrooms (2)</h2></summary>
+      <summary><h2 id="heading-mushrooms">Mushrooms</h2></summary>
       <p>There are several species of mushroom present around the creek, including agarics, boletes, jellies, polyspores, shelf, and more. The author is not experienced enough to identify them properly.</p>
       <div class="catalog">
         <div class="catalog-header">
@@ -384,7 +384,7 @@
 
   <section aria-labelledby="heading-plants">
     <details>
-      <summary><h2 id="heading-plants">Plants (100)</h2></summary>
+      <summary><h2 id="heading-plants">Plants</h2></summary>
       <div class="catalog">
         <div class="catalog-header">
           <div>Common Name</div>
@@ -502,6 +502,14 @@
   const searchClear = document.querySelector('#search-clear');
   const searchLabel = document.querySelector('label[for="search"]');
 
+  // Compute section totals and search label count from the DOM.
+  document.querySelectorAll('section').forEach(section => {
+    const h2 = section.querySelector('summary h2');
+    const count = section.querySelectorAll('.catalog-row').length;
+    h2.dataset.baseLabel = h2.textContent.trim();
+    h2.textContent = `${h2.dataset.baseLabel} (${count})`;
+  });
+
   const totalCount = document.querySelectorAll('.catalog-row').length;
   searchLabel.textContent = `Search ${totalCount} species`;
 
@@ -517,10 +525,7 @@
     document.querySelectorAll('section').forEach(section => {
       const rows = section.querySelectorAll('.catalog-row');
       const h2 = section.querySelector('summary h2');
-
-      if (!h2.dataset.fullLabel) {
-        h2.dataset.fullLabel = h2.textContent.trim();
-      }
+      const totalRows = rows.length;
 
       let matchCount = 0;
 
@@ -535,11 +540,11 @@
       if (query) {
         section.hidden = matchCount === 0;
         if (matchCount > 0) section.querySelector('details').open = true;
-        h2.textContent = h2.dataset.fullLabel.replace(/\(\d+\)/, `(${matchCount})`);
+        h2.textContent = `${h2.dataset.baseLabel} (${matchCount})`;
       } else {
         section.hidden = false;
         rows.forEach(row => row.hidden = false);
-        h2.textContent = h2.dataset.fullLabel;
+        h2.textContent = `${h2.dataset.baseLabel} (${totalRows})`;
       }
     });
   });
