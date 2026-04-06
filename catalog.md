@@ -195,3 +195,4 @@
 |Common Eastern Firefly|Photinus pyralis|Visual by author|
 |Northern short-tailed shrew|Blarina brevicauda|Visual by author|
 |Eastern Worm Snake|Carphophis amoenus amoenus|Visual by author|
+|Upland Chorus Frog|Hyla versicolor|Visual by author|
