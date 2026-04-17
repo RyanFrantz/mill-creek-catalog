@@ -188,7 +188,6 @@
 |Rusty Blackbird|Euphagus carolinus|Visual by author|
 |Broom Forkmoss|Dicranum scoparium|Visual by author|
 |Red-stemmed Feather Moss|Pleurozium schreberi|Visual by author|
-|Bess Beetle|Odontotaenius disjunctus|Visual by author|
 |Spined Micrathena|Micrathena gracilis|Visual by author|
 |Sassafras|Sassafras albidum|Visual by author|
 |Black Rat Snake|Pantherophis alleghaniensis|Visual by author|
@@ -197,3 +196,4 @@
 |Eastern Worm Snake|Carphophis amoenus amoenus|Visual by author|
 |Upland Chorus Frog|Hyla versicolor|Visual by author|
 |Pine Warbler|Setophaga pinus|Audible by author|
+|Horned Passalus Beetle|Odontotaenius disjunctus|Visual by author|
