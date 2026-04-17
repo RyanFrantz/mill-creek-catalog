@@ -197,3 +197,4 @@
 |Upland Chorus Frog|Hyla versicolor|Visual by author|
 |Pine Warbler|Setophaga pinus|Audible by author|
 |Horned Passalus Beetle|Odontotaenius disjunctus|Visual by author|
+|Wild Yam|Dioscorea villosa|Visual by author|
