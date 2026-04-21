@@ -198,3 +198,4 @@
 |Pine Warbler|Setophaga pinus|Audible by author|
 |Horned Passalus Beetle|Odontotaenius disjunctus|Visual by author|
 |Wild Yam|Dioscorea villosa|Visual by author|
+|Chipping Sparrow|Spizella passerina|Visual by author|
