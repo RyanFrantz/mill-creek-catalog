@@ -199,3 +199,5 @@
 |Horned Passalus Beetle|Odontotaenius disjunctus|Visual by author|
 |Wild Yam|Dioscorea villosa|Visual by author|
 |Chipping Sparrow|Spizella passerina|Visual by author|
+|Carolina Cranesbill|Geranium carolinianum|Visual by author|
+|Northern Masked Chafer|Cyclocephala borealis|Visual by author|
