@@ -201,3 +201,4 @@
 |Chipping Sparrow|Spizella passerina|Visual by author|
 |Carolina Cranesbill|Geranium carolinianum|Visual by author|
 |Northern Masked Chafer|Cyclocephala borealis|Visual by author|
+|Red-eyed Vireo|Vireo olivaceus|Audible by author|
