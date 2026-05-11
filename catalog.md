@@ -202,3 +202,10 @@
 |Carolina Cranesbill|Geranium carolinianum|Visual by author|
 |Northern Masked Chafer|Cyclocephala borealis|Visual by author|
 |Red-eyed Vireo|Vireo olivaceus|Audible by author|
+|Three-leaved Rattlesnakeroot|Nabalus trifoliolatus|Visual by author|
+|Flowering Dogwood|Cornus florida|Visual by author|
+|Rattlesnake Hawkweed|Pilosella vinosa|Visual by author|
+|Smooth Solomon's Seal|Polygonatum biflorum|Visual by author|
+|Spatterdock|Nuphar advena|Visual by author|
+|Bitternut Hickory|Carya cordiformis|Visual by author|
+|Mockernut Hickory|Carya alba|Visual by author|
