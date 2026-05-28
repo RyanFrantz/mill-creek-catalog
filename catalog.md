@@ -209,3 +209,4 @@
 |Spatterdock|Nuphar advena|Visual by author|
 |Bitternut Hickory|Carya cordiformis|Visual by author|
 |Mockernut Hickory|Carya alba|Visual by author|
+|Eastern Harvestman|Leiobunum vittatum|Visual by author|
