@@ -124,7 +124,7 @@
 |Lady Fern|Athyrium filix-femina|Visual by author|
 |Shield Fern|Dryopteris sp.|Visual by author|
 |White-panicled Aster|Symphyotrichum lanceolatum|Visual by author|
-|Indian Hemp|Apocynum cannabinum|Visual by author|
+|Hemp Dogbane|Apocynum cannabinum|Visual by author|
 |Swamp Doghobble|Eubotrys racemosa|Visual by author|
 |Red Mulberry|Morus rubra|Visual by author|
 |Eastern Enchanter's Nightshade|Circaea canadensis|Visual by author|
@@ -210,3 +210,14 @@
 |Bitternut Hickory|Carya cordiformis|Visual by author|
 |Mockernut Hickory|Carya alba|Visual by author|
 |Eastern Harvestman|Leiobunum vittatum|Visual by author|
+|Cucumber Root|Medeola virginiana|Visual by author|
+|Woodland Bluet|Houstonia purpurea|Visual by author|
+|Eastern Star Sedge|Carex radiata|Visual by author|
+|Sensitive Fern|Onoclea sensibilis|Visual by author|
+|Fleabane|Erigeron philadelphicus|Visual by author|
+|Narrow-leaved Cattail|Typha angustifolia|Visual by author|
+|Arrowvine|Persicaria sagittata|Visual by author|
+|Blue-eyed Grass|Sisyrinchium angustifolium|Visual by author|
+|Spotted Water Hemlock|Cicuta maculata|Visual by author|
+|White vervain|Verbena urticifolia|Visual by author|
+|Horseweed|Erigeron canadensis|Visual by author|
