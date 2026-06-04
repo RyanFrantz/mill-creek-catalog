@@ -5,8 +5,8 @@
 |White Oak|Quercus alba|Visual by author|plants|
 |Northern Red Oak|Quercus rubra|Visual by author|plants|
 |Southern Red Oak|Quercus falcata|Visual by author|plants|
-|Tulip tree|Liriodendron tulipifera|Visual by author|plants|
-|Blackhaw viburnum|Viburnum prunifolium|Visual by author|plants|
+|Tulip Tree|Liriodendron tulipifera|Visual by author|plants|
+|Blackhaw Viburnum|Viburnum prunifolium|Visual by author|plants|
 |Sweetgum|Liquidambar styraciflua|Visual by author|plants|
 |Eastern Hemlock|Tsuga canadensis|Visual by author|plants|
 |American Holly|Ilex opaca|Visual by author|plants|
@@ -22,7 +22,7 @@
 |Red-bellied Woodpecker|Melanerpes carolinus|Visual by author|birds|
 |Yellow-bellied Sapsucker|Sphyrapicus varius|Visual by author|birds|
 |Downy Woodpecker|Dryobates pubescens|Visual by author|birds|
-|Hairy woodpecker|Dryobates villosus|Visual by author|birds|
+|Hairy Woodpecker|Dryobates villosus|Visual by author|birds|
 |Pileated Woodpecker|Dryocopus pileatus|Visual by author|birds|
 |Northern Flicker|Colaptes auratus|Visual by author|birds|
 |Carolina Chickadee|Poecile carolinensis|Visual by author|birds|
@@ -44,7 +44,7 @@
 |Wood Duck|Aix sponsa|Visual by author|birds|
 |House Finch|Haemorhous mexicanus|Visual by author|birds|
 |American Crow|Corvus brachyrhynchos|Visual by author|birds|
-|Great blue Heron|Ardea herodias|Visual by author|birds|
+|Great Blue Heron|Ardea herodias|Visual by author|birds|
 |Ruby-throated Hummingbird|Archilochus colubris|Visual by author|birds|
 |Mallard|Anas platyrhynchos|Visual by author|birds|
 |Red-winged Blackbird|Agelaius phoeniceus|Visual by author|birds|
@@ -75,7 +75,7 @@
 |Eastern Redbud|Cercis canadensis|Visual by author|plants|
 |Winterberry Holly|Ilex verticillata|Visual by author|plants|
 |Black Locust|Robinia pseudoacacia|Visual by author|plants|
-|Pink Azalea (Pinxter flower)|Rhododendron periclymenoides|Visual by author|plants|
+|Pink Azalea (Pinxter Flower)|Rhododendron periclymenoides|Visual by author|plants|
 |Black Cohosh|Actaea racemosa|Visual by author|plants|
 |Virginia Creeper|Parthenocissus quinquefolia|Visual by author|plants|
 |Red Fox|Vulpes vulpes|Visual by author|mammals-fish|
@@ -88,7 +88,7 @@
 |Crappie|Pomoxis sp.|Second-hand report|mammals-fish|
 |Sycamore|Platanus occidentalis|Visual by author|plants|
 |Arrowwood Viburnum|Viburnum dentatum|Visual by author|plants|
-|Maple leaf Viburnum|Viburnum acerifolium|Visual by author|plants|
+|Maple Leaf Viburnum|Viburnum acerifolium|Visual by author|plants|
 |Trumpet Creeper|Campsis radicans|Visual by author|plants|
 |Jewelweed (Touch-me-not)|Impatiens capensis|Visual by author|plants|
 |American Hog-peanut|Amphicarpaea bracteata|Visual by author|plants|
@@ -162,7 +162,7 @@
 |Poison Sumac|Toxicodendron vernix|Visual by author|plants|
 |Poison Ivy|Toxicodendron radicans|Visual by author|plants|
 |Netted Chain Fern|Woodwardia areolata|Visual by author|plants|
-|Turkey tail Mushroom|Trametes versicolor|Visual by author|mushrooms|
+|Turkey Tail Mushroom|Trametes versicolor|Visual by author|mushrooms|
 |Honey Mushroom|Armillaria mellea|Visual by author|mushrooms|
 |Gray Squirrel|Sciurus carolinensis|Visual by author|mammals-fish|
 |Woodland Jumping Mouse|Napaeozapus insignis|Visual by author|mammals-fish|
@@ -204,7 +204,7 @@
 |Red-eyed Vireo|Vireo olivaceus|Audible by author|birds|
 |Three-leaved Rattlesnakeroot|Nabalus trifoliolatus|Visual by author|plants|
 |Flowering Dogwood|Cornus florida|Visual by author|plants|
-|Rattlesnake Hawkweed|Pilosella vinosa|Visual by author|plants|
+|Rattlesnake Hawkweed|Pilosella venosa|Visual by author|plants|
 |Smooth Solomon's Seal|Polygonatum biflorum|Visual by author|plants|
 |Spatterdock|Nuphar advena|Visual by author|plants|
 |Bitternut Hickory|Carya cordiformis|Visual by author|plants|
@@ -219,5 +219,5 @@
 |Arrowvine|Persicaria sagittata|Visual by author|plants|
 |Blue-eyed Grass|Sisyrinchium angustifolium|Visual by author|plants|
 |Spotted Water Hemlock|Cicuta maculata|Visual by author|plants|
-|White vervain|Verbena urticifolia|Visual by author|plants|
+|White Vervain|Verbena urticifolia|Visual by author|plants|
 |Horseweed|Erigeron canadensis|Visual by author|plants|
