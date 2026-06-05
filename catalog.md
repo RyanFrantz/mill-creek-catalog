@@ -183,7 +183,6 @@
 |Cicada||Visual by author|insects-arachnids|
 |Cicada Killer|Sphecius speciosus|Visual by author|insects-arachnids|
 |Assassin Bug|Arilus cristatus|Visual by author|insects-arachnids|
-|Dragonfly||Visual by author|insects-arachnids|
 |Damselfly||Visual by author|insects-arachnids|
 |Rusty Blackbird|Euphagus carolinus|Visual by author|birds|
 |Broom Forkmoss|Dicranum scoparium|Visual by author|plants|
@@ -221,3 +220,11 @@
 |Spotted Water Hemlock|Cicuta maculata|Visual by author|plants|
 |White Vervain|Verbena urticifolia|Visual by author|plants|
 |Horseweed|Erigeron canadensis|Visual by author|plants|
+|Common Whitetail Dragonfly|Plathemis lydia|Visual by author|insects-arachnids|
+|Zabulon Skipper|Lon zabulon|Visual by author|insects-arachnids|
+|Six-spotted Tiger Beetle|Cicindela sexgulatta|Visual by author|insects-arachnids|
+|Eastern Pondhawk|Erythemis simplicicollis|Visual by author|insects-arachnids|
+|Swamp Milkweed Leaf Bettle|Labidomera clivicollis|Visual by author|insects-arachnids|
+|Summer Azure|Celastrina neglecta|Visual by author|insects-arachnids|
+|Refracted Metarranthis Moth|Metarranthis refractaria|Visual by author|insects-arachnids|
+|Eastern Eyed Click Beetle|Alaus oculatus|Visual by author|insects-arachnids|
