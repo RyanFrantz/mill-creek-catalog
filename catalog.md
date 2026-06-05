@@ -228,3 +228,4 @@
 |Summer Azure|Celastrina neglecta|Visual by author|insects-arachnids|
 |Refracted Metarranthis Moth|Metarranthis refractaria|Visual by author|insects-arachnids|
 |Eastern Eyed Click Beetle|Alaus oculatus|Visual by author|insects-arachnids|
+|Golden-backed Snipe Fly|Chrysopilus thoracicus|Visual by author|insects-arachnids|
