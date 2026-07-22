@@ -229,3 +229,8 @@
 |Refracted Metarranthis Moth|Metarranthis refractaria|Visual by author|insects-arachnids|
 |Eastern Eyed Click Beetle|Alaus oculatus|Visual by author|insects-arachnids|
 |Golden-backed Snipe Fly|Chrysopilus thoracicus|Visual by author|insects-arachnids|
+|Indigo Bunting|Passerina cyanea|Audible by author|birds|
+|Turk's Cap Lily|Lillium superbum|Visual by author|plants|
+|Red-lined Panopoda Moth|Panopoda rufimargo|Visual by author|insects-arachnids|
+|American bur-reed|Sparganium americanum|Visual by author|plants|
+|Ichneumonid Wasp|Rhyssella nitida|Visual by author|insects-arachnids|
